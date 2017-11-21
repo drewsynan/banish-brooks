@@ -12,6 +12,13 @@ function banishBrooks () {
                 e.parentElement.remove()
             }
         })
+
+        // mobile menu nav links
+        document.querySelectorAll("div header").forEach(function(e){
+            if (e.textContent.toLowerCase().includes('opinion')) {
+                e.parentElement.remove()
+            }
+        })
     }
 
     function killFeatureSections () {
